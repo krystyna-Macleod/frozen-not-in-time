@@ -1,6 +1,11 @@
 html {
   font-family: "Fredoka One", sans-serif;
-  background: repeating-linear-gradient(-30deg, #b3fbff, #c9fcff 19px);
+  background: repeating-linear-gradient(-30deg, #b3fbff, #d4fdff 19px);
+}
+
+.banner {
+  border-top: solid 10px #c9fcff;
+  border-bottom: solid 10px #c9fcff;
 }
 
 .banner-content {
@@ -18,13 +23,55 @@ p {
 }
 
 .btn-ghost {
-  color: #c09;
   border-color: #990073;
-  transition: color 1s linear;
+  color: #c09;
+  margin-left: .5em;
 }
 
 .btn-ghost:hover {
-  background-color: #c09;
+  background-color: rgba(153, 0, 115, .2);
+  border-color: #990073;
+  color: #c09;
+}
+
+.cherry {
+  transform: translateY(-1090px);
+}
+
+.vanilla {
+  transform: translateY(-700px);
+}
+
+.choco {
+  transform: translateY(-330px) translateX(25px);
+}
+
+.mint {
+  transform: translateY(300px);
+}
+
+.cone {
+  transform: translateY(185px);
+  animation: cone-a 1s ease-in;
+}
+
+@keyframes cone-a {
+
+  0% {
+    transform: translateY(-100em);
+  }
+
+  40% {
+    transform: translateY(-50em);
+  }
+
+  80% {
+    transform: translateY(50em);
+  }
+
+  100% {
+    transform: translate(185em);
+  }
 }
 
 @keyframes forwards {
