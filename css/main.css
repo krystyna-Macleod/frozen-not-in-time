@@ -27,6 +27,22 @@ p {
   background-color: #c09;
 }
 
+.vanilla {
+  transform: translateY(-150px);
+}
+
+.choco {
+  transform: translateY(-280px);
+}
+
+.mint {
+  transform: translateY(-420px);
+}
+
+.cone {
+  transform: translateY(-535px);
+}
+
 @keyframes forwards {
 
   0% {
