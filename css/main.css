@@ -2,3 +2,42 @@ html {
   font-family: "Fredoka One", sans-serif;
   background: repeating-linear-gradient(-30deg, #b3fbff, #d4fdff 10px);
 }
+
+@keyframes move {
+
+  0% {
+    transform: translateY(-20em);
+  }
+
+  40% {
+    transform: translateY(-10em);
+  }
+
+  80% {
+    transform: translateY(-5em);
+  }
+
+  100%{
+    transform: translateY(0em);
+  }
+}
+
+.ice-cherry {
+  animation: move 1s 2s linear;
+}
+
+.ice-vanilla {
+  animation: move 1s 2s linear;
+}
+
+.ice-choco {
+  animation: move 1s 2s linear;
+}
+
+.ice-mint {
+  animation: move 1s 2s linear;
+}
+
+.ice-cone {
+  animation: move 1s 2s linear;
+}
