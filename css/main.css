@@ -50,11 +50,11 @@ p {
 @keyframes forwards {
 
   0% {
-    transform: translateY(-50em);
+    transform: translateY(-1000em);
   }
 
   40% {
-    transform: translateY(-25em);
+    transform: translateY(-500em);
   }
 
   80% {
