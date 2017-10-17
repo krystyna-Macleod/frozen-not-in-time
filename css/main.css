@@ -1,25 +1,25 @@
 html {
+  border-bottom: 10px solid #b3fbff;
   font-family: "Fredoka One", sans-serif;
-  background: repeating-linear-gradient(-30deg, #b3fbff, #d4fdff 19px);
 }
 
 .banner {
-  border-top: solid 10px #c9fcff;
-  border-bottom: solid 10px #c9fcff;
-}
-
-.banner-content {
-  max-width: 19em;
-  transform-origin: left center;
-  transform: rotate(-5deg);
+  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+  border-top: 10px solid #b3fbff;
+  padding-left: 1em;
+  padding-bottom: 6.5em;
+  overflow: hidden;
 }
 
 h1 {
   color: #990073;
+  transform: rotate(-10deg);
 }
 
 p {
   color: #c09;
+  transform: rotate(-6deg);
+  max-width: 19em;
 }
 
 .btn-ghost {
@@ -34,81 +34,149 @@ p {
   color: #c09;
 }
 
+.banner-content p {
+  margin-left: .5em;
+}
+
+.banner-content {
+  opacity: 0;
+  text-shadow: 1px 2px rgba(0, 0, 0, .25);
+  transform-origin: left center;
+  animation: blur 2s 800ms linear forwards;
+  animation-delay: 3s;
+  padding-left: 1em;
+}
+
+.banner-images {
+  position: relative;
+}
+
+img {
+  position: absolute;
+}
+
 .cherry {
-  transform: translateY(-1090px);
+  animation: cherry 700ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 80px);
+  width: 175px;
+  z-index: 10;
 }
 
 .vanilla {
-  transform: translateY(-700px);
+  animation: vanilla 600ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 80px);
+  width: 175px;
+  z-index: 9;
 }
 
 .choco {
-  transform: translateY(-330px) translateX(25px);
+  animation: choco 500ms linear forwards;
+  animation-delay: 2s;
+  top: -1200px;
+  left: calc(50% - 70px);
+  width: 175px;
+  z-index: 8;
 }
 
 .mint {
-  transform: translateY(300px);
+  animation: mint 400ms linear forwards;
+  animation-delay: 2s;
+  left: calc(50% - 90px);
+  top: -1200px;
+  width: 175px;
+  z-index: 7;
 }
 
 .cone {
-  transform: translateY(185px);
-  animation: cone-a 1s ease-in;
+  animation: cone 300ms linear forwards;
+  animation-delay: 2s;
+  left: calc(50% - 90px);
+  top: -1200px;
+  width: 180px;
+  z-index: 11;
 }
 
-@keyframes cone-a {
+@keyframes blur {
 
   0% {
-    transform: translateY(-100em);
-  }
-
-  40% {
-    transform: translateY(-50em);
-  }
-
-  80% {
-    transform: translateY(50em);
+    opacity: 0;
+    filter: blur(5px);
   }
 
   100% {
-    transform: translate(185em);
+    opacity: 1;
+    filter: blur(0);
   }
 }
 
-@keyframes forwards {
+@keyframes cherry {
 
   0% {
-    transform: translateY(-1000em);
-  }
-
-  40% {
-    transform: translateY(-500em);
-  }
-
-  80% {
-    transform: translateY(-10em);
+    top: -1500px;
   }
 
   100% {
-    transform: translate(0em);
+    top: -37px;
   }
 }
 
-.ice-cherry {
-  animation: forwards 1s 2s linear;
+@keyframes fudge {
+
+  0% {
+    top: -1500px;
+  }
+
+  100% {
+    top: 35px;
+  }
 }
 
-.ice-vanilla {
-  animation: forwards 1s 2s linear;
+@keyframes choco {
+
+  0% {
+    top: -1500px;
+  }
+
+  100% {
+    top: 115px;
+  }
 }
 
-.ice-choco {
-  animation: forwards 1s 2s linear;
+@keyframes mint {
+
+  0% {
+    top: -1500px;
+  }
+
+  100% {
+    top: 205px;
+  }
 }
 
-.ice-mint {
-  animation: forwards 1s 2s linear;
+@keyframes cone {
+
+  0% {
+    top: -1500px;
+  }
+
+  100% {
+    top: 295px;
+  }
 }
 
-.ice-cone {
-  animation: forwards 1s 2s linear;
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    padding-left: 11em;
+    padding-right: 10em;
+  }
+
+  .intro {
+    padding-top: 2em;
+  }
+
 }
