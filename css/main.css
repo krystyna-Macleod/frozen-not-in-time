@@ -124,7 +124,7 @@ img {
   }
 }
 
-@keyframes fudge {
+@keyframes vanilla {
 
   0% {
     top: -1500px;
