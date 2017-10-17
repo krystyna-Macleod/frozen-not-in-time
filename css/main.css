@@ -16,14 +16,14 @@ h1 {
 .btn-ghost {
   color: #c09;
   border-color: #990073;
-  transition: color 1ms linear;
+  transition: color 1s linear;
 }
 
 .btn-ghost:hover {
   background-color: #c09;
 }
 
-@keyframes move {
+@keyframes forward {
 
   0% {
     transform: translateY(-50em);
@@ -38,26 +38,26 @@ h1 {
   }
 
   100% {
-    transform: translateY(0em);
+    transform: translate(0em);
   }
 }
 
 .ice-cherry {
-  animation: move 1s 2s linear;
+  animation: forward 1s 2s linear;
 }
 
 .ice-vanilla {
-  animation: move 1s 2s linear;
+  animation: forward 1s 2s linear;
 }
 
 .ice-choco {
-  animation: move 1s 2s linear;
+  animation: forward 1s 2s linear;
 }
 
 .ice-mint {
-  animation: move 1s 2s linear;
+  animation: forward 1s 2s linear;
 }
 
 .ice-cone {
-  animation: move 1s 2s linear;
+  animation: forward 1s 2s linear;
 }
