@@ -27,26 +27,6 @@ p {
   background-color: #c09;
 }
 
-.cherry {
-  transform: translateY(-50px);
-}
-
-.vanilla {
-  transform: translateY(-200px);
-}
-
-.choco {
-  transform: translateY(-350px);
-}
-
-.mint {
-  transform: translateY(-520px);
-}
-
-.cone {
-  transform: translateY(-635px);
-}
-
 @keyframes forwards {
 
   0% {
