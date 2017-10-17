@@ -5,7 +5,7 @@ html {
 
 .banner {
   background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
-  border-top: 10px solid #b3fbff;
+  border-top: 9px solid #b3fbff;
   padding-left: 1em;
   padding-bottom: 6.5em;
   overflow: hidden;
